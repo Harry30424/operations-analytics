@@ -20,10 +20,10 @@
 * **志願性流失 vs 非志願性流失**：重點關注因服務、價格或競爭對手吸引而發生的「志願性流失」。
 * **先假設，後驗證**：在建模前先依據產品價值鏈建立假設（如：月繳用戶、未購買資安服務者流失率較高），再以資料驗證。
 
-### 2. 建議監控商業指標 (Business Metrics)
-* **整體流失率 (Overall Churn Rate)**：資料集 Baseline 為 $26.5\%$。
-* **流失營收損失 (MRR at Risk)**：$\sum \text{MonthlyCharges}_{\text{churned}}$
-* **預估顧客終身價值 (LTV)**：$\text{ARPU} \times \text{Average Tenure (Months)}$
+### 2. 監控商業指標 (Business Metrics)
+* **整體流失率 (Overall Churn Rate)**：資料集 Baseline 為 26.5%。
+* **流失營收損失 (MRR at Risk)**：sum({MonthlyCharges(每月收入)}*{churn_probability(流失機率)})
+* **預估顧客終身價值 (LTV)**：LTV = ARPU(每戶平均月收入) *毛利率/每月流失率
 
 ---
 
